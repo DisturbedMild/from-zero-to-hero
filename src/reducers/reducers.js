@@ -1,4 +1,4 @@
-import registrationReducer from './registrationSlice';
+import registrationReducer from './registration-slice';
 
 const rootReducer = {
 	registration: registrationReducer
