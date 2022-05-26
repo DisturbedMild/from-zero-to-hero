@@ -10,11 +10,10 @@ const Header = () => {
     setBurgerIsActive(!burgerIsActive);
   };
 
-
   return (
     <header className={classes.header}>
       <h2 className={classes["header-title"]}>
-        From 0<br /> To Hero
+        From 0<br />To Hero
       </h2>
       {document.body.offsetWidth < 576 && <BurgerButton onClick={activeBurgerHandler} isActive={burgerIsActive} />}
       {(burgerIsActive || document.body.offsetWidth > 576) && (

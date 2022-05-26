@@ -1,0 +1,16 @@
+.home {
+	margin-top: 150px;
+}
+.header {
+	text-align: center;
+	font-size: 3rem;
+}
+
+@media(min-width:576px) {
+	.home {
+		margin-top: 200px;
+	}
+	.header {
+		font-size: 4rem;
+	}
+}
