@@ -1,5 +1,10 @@
 .home {
-	margin-top: 150px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	margin-top: 170px;
 }
 .header {
 	text-align: center;

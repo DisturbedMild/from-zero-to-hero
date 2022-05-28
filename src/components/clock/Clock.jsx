@@ -1,4 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
+import { NavLink } from 'react-router-dom';
 import classes from "./Clock.module.css";
 
 const Clock = () => {
@@ -25,6 +26,7 @@ const Clock = () => {
 		return () => {
 			clearTimeout(timerId)
 		}
+    // eslint-disable-next-line
   }, [seconds]);
 
   return (
@@ -38,6 +40,9 @@ const Clock = () => {
         <div>Hours</div>
         <div>Mins</div>
         <div>Secs</div>
+      </div>
+      <div className={classes.btn}>
+      <NavLink to="/registration">Start Now</NavLink>
       </div>
     </div>
   );

@@ -15,7 +15,12 @@ html, body {
 ul {
 	list-style-type: none;
 }
-
+main {
+	min-height: 100%;
+}
 #root {
-	height: 100%;
+	min-height: 100%;
+	height: auto;
+  display: flex;
+  flex-direction: column;
 }
