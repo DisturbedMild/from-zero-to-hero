@@ -9,7 +9,7 @@ const Clock = () => {
 
   const getTime = useCallback(() => {
     setSeconds((prevState) => (prevState += 1));
-    if (seconds > 59) {
+    if (seconds >= 59) {
       setSeconds(0);
       setMinutes((prevState) => (prevState += 1));
     }
