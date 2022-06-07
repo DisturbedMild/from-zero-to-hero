@@ -1,7 +1,10 @@
+import { useContext } from 'react';
+import AuthContext from '../store/auth-context';
 import { NavLink } from 'react-router-dom';
 import classes from "./AboutPage.module.css";
 
 const AboutPage = () => {
+  const { isLogginIn } =  useContext(AuthContext);
   return (
     <section className={classes.about}>
       <h1>10,000 Hourse rule.</h1>
@@ -52,7 +55,7 @@ const AboutPage = () => {
         <p>With this project you can start from small like 100hours and move
           from one point to another step by step.</p>
         <p>I hope everyone will get to the point and you will become a pro.</p>
-				<NavLink to='../registration'>Start now</NavLink>
+			 {!isLogginIn && 	<NavLink to='../registration'>Start now</NavLink>}
       </div>
     </section>
   );
